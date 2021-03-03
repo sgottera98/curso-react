@@ -5,15 +5,17 @@ export default (props) => {
    
     const prod = produtos.map(el => {
         return (
-            <li key={el.id}>
-                {el.id}) {el.nome}, {el.preco}
-            </li>
+            <tr key={el.id}>
+                <td>{el.id})</td>
+                <td>{el.nome}</td>
+                <td>{el.preco}</td>
+            </tr>
         )
     })
 
     return (
-        <ul style={{listStyle: "none"}}>
+        <>
             {prod}
-        </ul>
+        </>
     )
 }

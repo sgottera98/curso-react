@@ -15,7 +15,7 @@ export default props => {
             </li>
         )
     })
-    
+
     return (
         <div>
             <ul style={{ listStyle: "none"}}>
